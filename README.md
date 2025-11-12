@@ -54,9 +54,6 @@ Perfect 👍 — here’s how to **professionally include your dataset sample de
 
 ---
 
-Would you like me to integrate this directly below your “📚 Datasets Used” section in the README (so it reads naturally before “⚙️ Experimental Setup”)?
-
----
 
 ## ⚙️ Experimental Setup
 
