@@ -1,10 +1,3 @@
-Absolutely 👍 — here’s a **clean, professional, and detailed `README.md`** for your **Suvidha Foundation Internship Project**:
-
-> Covers: abstract, setup, methodology, metrics, results, and structure — perfect for GitHub.
-
----
-
-```markdown
 # 🚀 Transformer-Based Text Summarization (BART vs LongT5)
 
 ### 🧠 Internship Project — Suvidha Foundation
@@ -125,8 +118,6 @@ The objective was to **implement, fine-tune, and evaluate** transformer-based su
 
 ## 📂 Repository Structure
 
-```
-
 Suvidha_Internship/
 ├── data/
 │   ├── cnn_dailymail/
@@ -143,6 +134,7 @@ Suvidha_Internship/
 └── LICENSE
 
 ```
+
 
 ---
 
@@ -170,8 +162,3 @@ It was a valuable experience in applying **transformer architectures** for real-
 ---
 
 ### ⭐ If you found this useful, consider giving the repo a star!
-```
-
----
-
-Would you like me to create a **matching README** for your next part (“PEGASUS vs LED”) too — so both internship subprojects look like a professional 2-part research-style series on GitHub?
