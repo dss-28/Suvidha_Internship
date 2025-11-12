@@ -1,19 +1,23 @@
-# 🚀 Transformer-Based Text Summarization (BART vs LongT5)
+
+---
+
+# 🚀 Transformer-Based News Summarization (BART vs LongT5)
 
 ### 🧠 Internship Project — Suvidha Foundation
-Exploring and comparing transformer architectures for **abstractive text summarization**, focusing on how **model design** and **input length** affect summarization quality across domains — from short news to long-form research papers.
+
+This internship project focuses on **abstractive summarization of news articles** (CNN/DailyMail).
+To **better understand model behavior and build a robust system**, the pipeline was also evaluated on **long-form documents** (ArxivSum), demonstrating how **architecture and input length affect summarization performance**.
 
 ---
 
 ## 📘 Project Overview
 
-This project was completed as part of my internship at **Suvidha Foundation**.  
-The objective was to **implement and evaluate** transformer-based summarization models — **BART** and **LongT5** — on two datasets of different nature and length.
+The project involved implementing and evaluating **BART** and **LongT5** across datasets of different lengths:
 
-| Model | Architecture | Key Feature | Typical Use Case |
-|:------|:--------------|:-------------|:-----------------|
-| **BART (facebook/bart-large-cnn)** | Encoder-Decoder | Denoising autoencoder with bidirectional encoder + autoregressive decoder | News summarization |
-| **LongT5 (google/long-t5-tglobal-base)** | Encoder-Decoder | Sparse + global attention mechanism for longer sequences (up to 16K tokens) | Long-form summarization |
+| Model                                    | Architecture    | Key Feature                                                               | Typical Use Case                            |
+| :--------------------------------------- | :-------------- | :------------------------------------------------------------------------ | :------------------------------------------ |
+| **BART (facebook/bart-large-cnn)**       | Encoder-Decoder | Denoising autoencoder with bidirectional encoder + autoregressive decoder | News summarization                          |
+| **LongT5 (google/long-t5-tglobal-base)** | Encoder-Decoder | Sparse + global attention (up to 16K tokens)                              | Long-form documents (for system robustness) |
 
 ---
 
