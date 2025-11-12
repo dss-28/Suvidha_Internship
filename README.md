@@ -36,6 +36,25 @@ The objective was to **implement and evaluate** transformer-based summarization 
 ### 2. **ArxivSum**
 - Research paper dataset with long scientific documents (up to 10K–16K tokens).
 - Used for **LongT5** evaluation.
+Perfect 👍 — here’s how to **professionally include your dataset sample details** in your README, under a clean “📊 Dataset Summary” section, using what you shared (with clarity on what portions you actually used for evaluation):
+
+---
+
+## 📊 Dataset Summary
+
+| Dataset           |          Type          | Train Samples | Validation Samples | Test Samples | Used in This Project                               |
+| :---------------- | :--------------------: | :-----------: | :----------------: | :----------: | :------------------------------------------------- |
+| **CNN/DailyMail** |       Short News       |    287,113    |       11,490       |    13,368    | ✅ Used full **validation** & **test** sets         |
+| **ArxivSum**      |     Research Papers    |    203,037    |        6,440       |     6,436    | ✅ Used **500 samples each** from validation & test |
+| **WikiSum**       | Long-form Multi-Source |     35,775    |        1,000       |     2,000    | 🚧 Planned for next phase                          |
+| **MultiNews**     |   Multi-Document News  |     44,972    |        5,662       |     5,662    | 🚧 Planned for next phase                          |
+
+> ✅ Focused on **single-source summarization** in this phase (BART & LongT5).
+> 🔭 **Next step:** Extend pipeline for **multi-source summarization** (PEGASUS, LED).
+
+---
+
+Would you like me to integrate this directly below your “📚 Datasets Used” section in the README (so it reads naturally before “⚙️ Experimental Setup”)?
 
 ---
 
