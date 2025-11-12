@@ -8,7 +8,7 @@ Exploring and comparing transformer architectures for **abstractive text summari
 ## 📘 Project Overview
 
 This project was completed as part of my internship at **Suvidha Foundation**.  
-The objective was to **implement, fine-tune, and evaluate** transformer-based summarization models — **BART** and **LongT5** — on two datasets of different nature and length.
+The objective was to **implement and evaluate** transformer-based summarization models — **BART** and **LongT5** — on two datasets of different nature and length.
 
 | Model | Architecture | Key Feature | Typical Use Case |
 |:------|:--------------|:-------------|:-----------------|
@@ -45,41 +45,49 @@ The objective was to **implement, fine-tune, and evaluate** transformer-based su
 |:-----------|:------|:--------|
 | Dataset | CNN/DailyMail | ArxivSum |
 | Max Input Tokens | 1024 | 16384 |
-| Batch Size | 2 | 1 |
-| Optimizer | AdamW | AdamW |
-| Learning Rate | 2e-5 | 2e-5 |
+| Batch Size | 10 | 1 |
 | Evaluation Metric | ROUGE (1/2/L) + Precision | ROUGE (1/2/L) + Precision |
 | Platform | Google Colab (T4 GPU) | Google Colab (T4 GPU) |
 
 ---
 
-## 📊 Results
-
-### 🔹 **BART (facebook/bart-large-cnn)** — *Short Text (News)*  
-**Dataset:** CNN/DailyMail  
-
-| Metric | Score |
-|:--------|:------:|
-| ROUGE-1 | 38.69 |
-| ROUGE-2 | 16.9 |
-| ROUGE-L | 23.9 |
-| Avg. Precision | 37.1% |
-
-> ✅ Performs best on short, structured news content — produces fluent and concise summaries.
+Perfect — you’ve structured it well. To make this **README section more accurate, polished, and publication-ready**, here’s the refined version that clearly distinguishes between validation and test performance, improves metric presentation, and gives concise yet professional insights:
 
 ---
 
-### 🔹 **LongT5 (google/long-t5-tglobal-base)** — *Long Text (Research)*  
-**Dataset:** ArxivSum  
+## 📊 Results
 
-| Metric | Score |
-|:--------|:------:|
-| ROUGE-1 | 23.24 |
-| ROUGE-2 | 5.59 |
-| ROUGE-L | 13.69 |
-| Avg. Precision | 31.34% |
+### 🔹 **BART (facebook/bart-large-cnn)** — *Short Text Summarization (News)*
 
-> ✅ Optimized for long-document summarization, leveraging global attention for effective context handling.
+**Dataset:** CNN/DailyMail
+
+| Metric             | Validation |  Test  |
+| :----------------- | :--------: | :----: |
+| **ROUGE-1**        |    38.69   |  37.68 |
+| **ROUGE-2**        |    16.90   |  16.29 |
+| **ROUGE-L**        |    23.90   |  23.33 |
+| **Avg. Precision** |    32.7%   | 31.49% |
+
+> ✅ **BART** achieves the highest ROUGE scores across short news datasets.
+> 🧠 Excels at generating concise, fluent, and well-structured summaries, showing strong generalization across validation and test sets.
+
+---
+
+### 🔹 **LongT5 (google/long-t5-tglobal-base)** — *Long Document Summarization (Research Papers)*
+
+**Dataset:** ArxivSum
+
+| Metric             | Validation |  Test  |
+| :----------------- | :--------: | :----: |
+| **ROUGE-1**        |    23.24   |  22.94 |
+| **ROUGE-2**        |    5.59    |  5.29  |
+| **ROUGE-L**        |    13.69   |  13.75 |
+| **Avg. Precision** |   31.34%   | 33.45% |
+
+> ✅ **LongT5** demonstrates strong precision for long-context inputs using global attention.
+> 📘 Ideal for summarizing lengthy research or technical documents, trading off some ROUGE recall for better factual consistency and coverage.
+
+---
 
 ---
 
@@ -107,8 +115,8 @@ The objective was to **implement, fine-tune, and evaluate** transformer-based su
    - Tokenization and truncation handled by the respective tokenizer (BART/LongT5).
 2. **Model Setup**
    - Loaded pre-trained models from Hugging Face (`facebook/bart-large-cnn`, `google/long-t5-tglobal-base`).
-3. **Training / Fine-tuning**
-   - Optimized with AdamW; monitored ROUGE metrics during validation.
+3. **Inference**
+   - Inferred articles using models ; monitored ROUGE metrics during validation.
 4. **Evaluation**
    - Summaries generated on validation split and scored using ROUGE and precision metrics.
 5. **Optimization**
