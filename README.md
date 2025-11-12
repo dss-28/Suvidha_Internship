@@ -14,6 +14,8 @@ To **better understand model behavior and build a robust system**, the pipeline 
 
 The project involved implementing and evaluating **BART** and **LongT5** across datasets of different lengths:
 
+Sure! Here’s your table properly formatted in **Markdown**, ready to copy-paste into your README:
+
 | Model                                    | Architecture    | Key Feature                                                               | Typical Use Case                            |
 | :--------------------------------------- | :-------------- | :------------------------------------------------------------------------ | :------------------------------------------ |
 | **BART (facebook/bart-large-cnn)**       | Encoder-Decoder | Denoising autoencoder with bidirectional encoder + autoregressive decoder | News summarization                          |
