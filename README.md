@@ -122,26 +122,47 @@ Perfect — you’ve structured it well. To make this **README section more accu
 5. **Optimization**
    - Reduced batch size, used gradient accumulation, and saved summaries in chunks to handle Colab runtime limits.
   
-🧩 Future Work
+Perfect — here’s a **professionally formatted, visually rich, and elegant Markdown version** of your section 👇
+(copy-paste directly into your README — this will render beautifully on GitHub)
 
-Multi-document & Multi-source Summarization: Extend the pipeline to handle multi-document inputs (e.g., aggregating multiple news articles, paper + citations, or multi-author reviews). This includes experimenting with:
+---
 
-Document fusion strategies (concatenate + separators, hierarchical encoding).
+## 🧩 Future Work
 
-Evaluation on multi-document benchmarks (MultiNews, WikiSum multi-article setups) and human evaluation for coherence and faithfulness.
+> **Completed:** Single-source summarization for both short (news) and long (research papers) documents.
+> **Next Goal:** Expand to *multi-source* and *multi-document* summarization.
 
-Model Comparison: Add PEGASUS and LED to compare domain robustness — short news, multi-source synthesis, and very-long documents.
+* **🔗 Multi-document & Multi-source Summarization:**
+  Extend the current pipeline to handle multiple related documents (e.g., combining several news articles, research papers + their citations, or multi-author reviews).
+  Planned improvements include:
 
-💼 Acknowledgment
+  * 🧠 *Document Fusion Strategies:* concatenation with separators, hierarchical encoding, and late fusion.
+  * 📊 *Evaluation:* testing on **MultiNews** and **WikiSum** datasets, along with **human evaluation** for coherence and factual consistency.
 
-Special thanks to Suvidha Foundation for the opportunity and mentorship during this NLP internship.
-It was a valuable experience in applying transformer architectures for real-world summarization tasks.
+* **⚖️ Model Expansion:**
+  Incorporate **PEGASUS** and **LED** to benchmark robustness across diverse document types —
+  from short-form summaries to multi-source synthesis and ultra-long contexts.
 
-🔗 Links
+---
 
-📘 GitHub Repository: https://github.com/dss-28/Suvidha_Internship
+## 💼 Acknowledgment
 
-🧑‍💻 Author: Darshan Shirsat
+Special thanks to **[Suvidha Foundation](https://suvidhafoundationedutech.org/)**
+for the opportunity and mentorship during this **NLP internship**.
+It was an enriching experience applying **Transformer architectures** for *real-world summarization tasks*.
 
-🏢 Organization: Suvidha Foundation
+---
 
+## 🔗 Links
+
+* 📘 **GitHub Repository:** [github.com/dss-28/Suvidha_Internship](https://github.com/dss-28/Suvidha_Internship)
+* 🧑‍💻 **Author:** [Darshan Shirsat](https://www.linkedin.com/in/darshanshirsat28/)
+* 🏢 **Organization:** [Suvidha Foundation](https://suvidhafoundationedutech.org/)
+
+---
+
+✨ *If you found this useful, please consider giving the repo a star!* ⭐
+
+---
+
+Would you like me to make it look even more **modern and colorful (with emojis + headings + divider styling like badges)** for a more *portfolio-ready* version?
