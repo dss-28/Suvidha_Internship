@@ -148,9 +148,11 @@ Suvidha_Internship/
 
 ## 🧩 Future Work
 
-- Extend comparison with **PEGASUS** and **LED** for domain-robust summarization.  
-- Implement **multi-document summarization** and **RL-based optimization (ROUGE-aware fine-tuning)**.  
-- Explore **LoRA** and **PEFT** for efficient fine-tuning on limited hardware.
+- **Multi-document & Multi-source Summarization:** Extend the pipeline to handle multi-document inputs (e.g., aggregating multiple news articles, paper + citations, or multi-author reviews). This includes experimenting with:
+  - Document fusion strategies (concatenate + separators, hierarchical encoding).
+  - Evaluation on multi-document benchmarks (MultiNews, WikiSum multi-article setups) and human evaluation for coherence and faithfulness.
+
+- **Model Comparison:** Add PEGASUS and LED to compare domain robustness — short news, multi-source synthesis, and very-long documents.
 
 ---
 
