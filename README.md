@@ -122,7 +122,6 @@ Perfect — you’ve structured it well. To make this **README section more accu
 5. **Optimization**
    - Reduced batch size, used gradient accumulation, and saved summaries in chunks to handle Colab runtime limits.
 
----
 Suvidha_Internship/
 ├── data/
 │   ├── cnn_dailymail/
@@ -137,4 +136,3 @@ Suvidha_Internship/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
-
