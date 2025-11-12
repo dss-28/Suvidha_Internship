@@ -123,3 +123,18 @@ Perfect — you’ve structured it well. To make this **README section more accu
    - Reduced batch size, used gradient accumulation, and saved summaries in chunks to handle Colab runtime limits.
 
 ---
+Suvidha_Internship/
+├── data/
+│   ├── cnn_dailymail/
+│   └── arxivsum/
+├── notebooks/
+│   ├── bart_summarization.ipynb
+│   └── longt5_summarization.ipynb
+├── outputs/
+│   ├── bart_summaries.csv
+│   ├── longt5_summaries.csv
+│   └── rouge_scores.json
+├── requirements.txt
+├── README.md
+└── LICENSE
+
