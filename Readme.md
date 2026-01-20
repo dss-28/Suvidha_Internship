@@ -1,15 +1,13 @@
-Here’s your updated README for the **new repo**, with the **earlier repo referenced** and **challenges section shortened** for clarity:
+Got it! Here’s your **full README as a single, continuous document**—ready to copy into your new repo without any buttons or breaks:
 
-```markdown
+---
+
 # 🚀 Progressive Transformer-Based Summarization
 
 > **From Single-Document to Multi-Document Abstractive Summarization**
 > Internship baseline extended into a system-level NLP project (personal extension)
 
----
-
-This repository presents a **continuous progression of an abstractive summarization system**, evolving from **single-document summarization** to **multi-document and multi-source summarization**.
-The project focuses on how **model architecture, attention mechanisms, and pipeline design** must adapt as task complexity increases.
+This repository presents a **continuous progression of an abstractive summarization system**, evolving from **single-document summarization** to **multi-document and multi-source summarization**. The project focuses on how **model architecture, attention mechanisms, and pipeline design** must adapt as task complexity increases.
 
 The original work (BART & LongT5) serves as a **baseline foundation** ([Internship Repo](https://github.com/dss-28/Suvidha_Internship/blob/main/README.md)), while the current extension (PEGASUS & LED) explores **multi-document summarization at scale**.
 
@@ -17,13 +15,9 @@ The original work (BART & LongT5) serves as a **baseline foundation** ([Internsh
 
 ## 🧭 Project Evolution
 
-```
-
 Single-Document (Baseline) ──▶ Multi-Document (Extension)
 Short News / Long Docs        News Aggregation / Long Multi-Source
 BART, LongT5                 PEGASUS, LED
-
-```
 
 This progression reflects **real-world NLP system development**, where increasing input size and document cardinality demand changes not only in models, but also in **pipeline strategy**.
 
@@ -70,6 +64,7 @@ This phase extends the pipeline to **multi-document and multi-source summarizati
 ### Pipeline Design
 
 * Hierarchical / fusion-based pipeline:
+
   1. Individual documents summarized or compressed
   2. Salient information fused into a compact representation
   3. Final abstractive summary generated
@@ -116,10 +111,16 @@ This phase extends the pipeline to **multi-document and multi-source summarizati
 
 ---
 
+Perfect — we can add a **Challenges** section that’s concise, honest, and highlights what’s new in your personal extension. Here’s a professional way to phrase it for your **personal repo README**:
+
+---
+
 ## ⚠️ Challenges
 
-* Compute limits on free Colab GPUs persisted; same batching/chunking strategies reused
-* Multi-document handling required hierarchical/fusion for PEGASUS and concatenation for LED
+* **Compute Constraints:** Free Google Colab GPUs limited batch sizes, model input lengths, and runtime duration — strategies like **chunked summaries, batch tuning, and incremental evaluation** were reused from the baseline.
+* **Pipeline Adaptation for Multi-Document Summarization:** Unlike the single-document phase, handling multiple documents required **hierarchical and fusion strategies** (for PEGASUS) and careful **input concatenation with separators** (for LED).
+
+> 💡 Overall, the **basic challenges** from the internship baseline remain, but the **multi-document handling and pipeline design** introduced the main new engineering effort.
 
 ---
 
@@ -164,14 +165,15 @@ This phase extends the pipeline to **multi-document and multi-source summarizati
 
 ## 👤 Author
 
-**Darshan Shirsat**  
+**Darshan Shirsat**
 MTech AI & Data Science
 
 ---
 
 ⭐ *Personal extension of single-document summarization to multi-document systems. If you find it useful, consider giving it a star.*
-```
 
-This version is **self-contained**, references your old internship repo, and keeps the challenges short and clear.
+---
 
-If you want, I can also **suggest a perfect repo description + topics** ready to paste on GitHub for maximum recruiter visibility. Do you want me to do that?
+This is now **ready to paste as a complete README.md** in your new repository.
+
+If you want, I can also **suggest GitHub repo description + topics** optimized for recruiter visibility so it gets maximum attention. Do you want me to do that?
